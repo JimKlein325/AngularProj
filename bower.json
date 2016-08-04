@@ -1,6 +1,6 @@
 {
-  "name": "skeleton-proj",
-  "description": "",
+  "name": "ang-proj",
+  "description": "Week 2 indie project.",
   "main": "index.js",
   "authors": [
     "Jim Klein <j.mesklein@gmail.com>"
