@@ -7,13 +7,17 @@ import { FoodItem  } from './food-item.model'
   directives: [FoodItemListComponent],
   template: `
   <div class="container">
-  <h1>Meal Tracker</h1>
-
-  <food-item-list
-  [foodItemList]="foodItems">
-  </food-item-list>
+    <h2>Meals</h2>
+      <table class="table table-striped">
+        <tbody>
+        <thead>
+          <food-item-list
+            [foodItemList]="foodItems">
+          </food-item-list>
+          </thead>
+        </tbody>
+      </table>
  </div>
- 
   `
 })
 

@@ -6,13 +6,11 @@ import { FoodItem } from './food-item.model';
   inputs: ['foodItem'],
   template: `
 
-  <tr>
-    <td>
+
     <h3>{{foodItem.name}}</h3>
     <p>{{foodItem.details}}</p>
     <p>{{foodItem.calories}}</p>
-    </td>
-    </tr>
+  
 
   `
 })

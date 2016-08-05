@@ -1,12 +1,13 @@
 h1 {
   color: blue;
+  text-align: center;
 }
 .selected {
   color: #22bdf0;
 }
 .task-form {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .add-button {
   margin-bottom: 10px;
