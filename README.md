@@ -1,4 +1,4 @@
-# Week 2 Angular Project
+# Food Tracker App
 
 #### JavaScript skill demonstration project:  Week 2 - August, 2016
 
@@ -6,16 +6,18 @@
 
 ## Description
 
-Gitview is a sample application for demonstrating basic proficiency in Javascript, JQuery, and related build tools used to create simple web apps.
+Food Tracker App is a sample application for demonstrating basic proficiency in Javascript, JQuery, and related build tools used to create simple web apps.
 
 A user can enter a github user name and view the user's public repositories and their descriptions.
 
 ## Setup/Installation Requirements
 * Install this project by cloning this repository:
     https://github.com/JimKlein325/gitview.git
-* Run $ npm install and all packages saved to the manifest file package.json.
-* Run $ bower install and all packages saved to the manifest file bower.json.
-* In your project directory run:  $ bower init
+* Run $ npm to install all packages saved to the manifest file package.json.
+* Run $ bower to install all packages saved to the manifest file bower.json.
+* In your project directory run:  $ bower install bootstrap --save*
+In your project directory run:  $ bower init
+* In your project directory run:  $ gulp bower
 * Install globals as needed (gulp, bower, sass, typescript, typescript packages.)
   - npm install gulp -g
   - npm install bower -g

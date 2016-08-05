@@ -1,30 +1,28 @@
 import { Component } from 'angular2/core';
+import { FoodItemListComponent } from './food-item-list.component';
+import { FoodItem  } from './food-item.model'
 
 @Component({
   selector: 'my-app',
+  directives: [FoodItemListComponent],
   template: `
   <div class="container">
-   <h1>To-Do List</h1>
-   <h3 *ngFor="#task of tasks">{{ task.description }}</h3>
- </div>
+  <h1>Meal Tracker</h1>
 
+  <food-item-list
+  [foodItemList]="foodItems">
+  </food-item-list>
+ </div>
+ 
   `
 })
 
 export class AppComponent {
-  public tasks: Task[];  // Task[] (or Array<Task>) identifies tasks as an array of Task objects
+  public foodItems: FoodItem[];
    constructor(){
-     this.tasks = [
-       new Task("Create To-Do List app.", 0),
-       new Task("Learn Kung Fu.", 1),
-       new Task("Rewatch all the Lord of the Rings movies.", 2),
-       new Task("Do the laundry.", 3)
+     this.foodItems = [
+       new FoodItem("Waffle", "Belgian Style with Strawberries and Whipped Cream", 700),
+       new FoodItem("Coffee", "Nice and Hot with Cream and Sugar", 100)
      ];
    }
-}
-export class Task {
-  public done: boolean = false;
-  constructor(public description: string, public id: number) {
-
-  }
 }
