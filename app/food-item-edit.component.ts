@@ -5,15 +5,31 @@ import {FoodItem} from './food-item.model';
   selector: 'food-item-edit',
   inputs: ['foodItem'],
   template: `
-  <div class="item-form">
-  <label for="item-name">Edit Name: </label>
-  <input id="item-name" [(ngModel)]="foodItem.name" class="col-sm-8 input-lg task-form"/>
-  <label for="item-name">Edit details: </label>
-  <input id="item-name" [(ngModel)]="foodItem.details" class="col-sm-8 input-lg task-form"/>
-  <label for="item-name">Edit Calories: </label>
-  <input id="item-name" [(ngModel)]="foodItem.calories" class="col-sm-8 input-lg task-form"/>
-     </div>
-  `
+  <div class="container">
+  <h3>Edit</h3>
+  <form>
+  <div class="form-group row">
+    <label for="item-name"class="col-md-2 col-form-label">Name</label>
+    <div class="col-md-4">
+      <input id="item-name" [(ngModel)]="foodItem.name"  class="form-control"/>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="item-details"class="col-md-2 col-form-label">Details</label>
+    <div class="col-md-4">
+      <input id="item-details" [(ngModel)]="foodItem.details"  class="form-control"/>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="item-calories"class="col-md-2 col-form-label">Name</label>
+    <div class="col-md-4">
+      <input id="item-calories" [(ngModel)]="foodItem.calories"  class="form-control"/>
+    </div>
+  </div>
+  </form>
+</div>
+
+     `
 })
 export class FoodItemEditComponent {
   public foodItem: FoodItem;
