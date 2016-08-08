@@ -8,6 +8,10 @@ import { FoodItem  } from './food-item.model'
   template: `
   <div class="container">
     <h2>Meals</h2>
+    <div class="box">
+        <p>Calories Today:  {{calorieTotal()}}</p>
+      </div>
+
       <table class="table table-inverse">
         <tbody>
         <thead>
@@ -29,4 +33,13 @@ export class AppComponent {
        new FoodItem("Coffee", "Nice and Hot with Cream and Sugar", 100)
      ];
    }
+   calorieTotal(): number {
+     var total = 0;
+     for( var foodItem of this.foodItems)
+     {
+       total = total + foodItem.calories;
+     }
+     return total;
+   }
+
 }

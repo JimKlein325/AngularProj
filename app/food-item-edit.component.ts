@@ -21,7 +21,7 @@ import {FoodItem} from './food-item.model';
     </div>
   </div>
   <div class="form-group row">
-    <label for="item-calories"class="col-md-2 col-form-label">Name</label>
+    <label for="item-calories"class="col-md-2 col-form-label">Calories</label>
     <div class="col-md-4">
       <input id="item-calories" [(ngModel)]="foodItem.calories"  class="form-control"/>
     </div>
