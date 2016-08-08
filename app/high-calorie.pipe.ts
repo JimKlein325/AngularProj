@@ -19,6 +19,5 @@ export class CaloricContentPipe implements PipeTransform {
     } else {
       return input;
     }
-
   }
 }

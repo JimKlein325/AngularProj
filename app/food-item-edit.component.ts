@@ -6,7 +6,7 @@ import {FoodItem} from './food-item.model';
   inputs: ['foodItem'],
   template: `
   <div class="container">
-  <h3>Edit</h3>
+    <h3>Edit</h3>
   <form>
   <div class="form-group row">
     <label for="item-name"class="col-md-2 col-form-label">Name</label>
@@ -28,7 +28,6 @@ import {FoodItem} from './food-item.model';
   </div>
   </form>
 </div>
-
      `
 })
 export class FoodItemEditComponent {

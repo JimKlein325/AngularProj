@@ -7,11 +7,12 @@ import { FoodItem  } from './food-item.model'
   directives: [FoodItemListComponent],
   template: `
   <div class="container">
-    <h2>Meals</h2>
+    <h2>Meal Items</h2>
     <div class="box">
-        <p>Calories Today:  {{calorieTotal()}}</p>
-      </div>
-
+      <p>Calories Today:  {{calorieTotal()}}</p>
+    </div>
+  </div>
+    <div class="container">
       <table class="table table-inverse">
         <tbody>
         <thead>
@@ -21,7 +22,8 @@ import { FoodItem  } from './food-item.model'
           </thead>
         </tbody>
       </table>
- </div>
+
+    </div>
   `
 })
 
@@ -33,6 +35,7 @@ export class AppComponent {
        new FoodItem("Coffee", "Nice and Hot with Cream and Sugar", 100)
      ];
    }
+
    calorieTotal(): number {
      var total = 0;
      for( var foodItem of this.foodItems)
@@ -41,5 +44,4 @@ export class AppComponent {
      }
      return total;
    }
-
 }

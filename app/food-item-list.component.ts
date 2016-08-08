@@ -21,12 +21,11 @@ import { CaloricContentPipe } from './high-calorie.pipe';
   [class.selected]="currentItem === selectedFoodItem"
   [foodItem] = "currentItem">
   </food-item-display>
-  <br>
 <food-item-edit *ngIf="selectedFoodItem" [foodItem]="selectedFoodItem">
 </food-item-edit>
-<br>
-
 <item-new (onSubmitNewFoodItem)="createFoodItem($event)"></item-new>
+
+
 
   `
 })

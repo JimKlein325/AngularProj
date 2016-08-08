@@ -1,4 +1,4 @@
-# Food Tracker App
+# Meal Tracker App
 
 #### JavaScript skill demonstration project:  Week 2 - August, 2016
 
@@ -6,13 +6,13 @@
 
 ## Description
 
-Food Tracker App is a sample application for demonstrating basic proficiency in Javascript, JQuery, and related build tools used to create simple web apps.
+Meal Tracker App is a sample application for demonstrating basic proficiency in Angular2, TypeScript, and related build tools used to create simple web apps.
 
-A user can enter a github user name and view the user's public repositories and their descriptions.
+A user can add, edit and view meal items, which include a name, description, and calorie count.   Additional functionality allows the user to filter high/low calorie items and view the total calories of the items in the list in a box styled using SASS.
 
 ## Setup/Installation Requirements
 * Install this project by cloning this repository:
-    https://github.com/JimKlein325/gitview.git
+    https://github.com/JimKlein325/AngularProj.git
 * Run $ npm to install all packages saved to the manifest file package.json.
 * Run $ bower to install all packages saved to the manifest file bower.json.
 * In your project directory run:  $ bower install bootstrap --save*
