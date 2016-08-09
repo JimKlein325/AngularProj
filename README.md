@@ -24,12 +24,6 @@ A user can add, edit and view meal items, which include a name, description, and
 * In your project directory run:  $ bower install bootstrap --save*
 In your project directory run:  $ bower init
 * In your project directory run:  $ gulp bower
-* Install globals as needed (gulp, bower, sass, typescript, typescript packages.)
-  - npm install gulp -g
-  - npm install bower -g
-  - gem install sass
-  - npm install typescript -g
-  - apm install atom-typescript
 * In your project directory run:  $ gulp build
 * In your project directory run:  $ gulp serve
 * View the app in your browser at "localhost:3000"
