@@ -13,8 +13,14 @@ A user can add, edit and view meal items, which include a name, description, and
 ## Setup/Installation Requirements
 * Install this project by cloning this repository:
     https://github.com/JimKlein325/AngularProj.git
-* Run $ npm to install all packages saved to the manifest file package.json.
+* Install globals as needed (gulp, bower, sass, typescript, typescript packages.)
+  - npm install gulp -g
+  - npm install bower -g
+  - gem install sass
+  - npm install typescript -g
+  - apm install atom-typescript
 * Run $ bower to install all packages saved to the manifest file bower.json.
+* Run $ npm to install all packages saved to the manifest file package.json.
 * In your project directory run:  $ bower install bootstrap --save*
 In your project directory run:  $ bower init
 * In your project directory run:  $ gulp bower

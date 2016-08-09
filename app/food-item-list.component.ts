@@ -24,9 +24,6 @@ import { CaloricContentPipe } from './high-calorie.pipe';
 <food-item-edit *ngIf="selectedFoodItem" [foodItem]="selectedFoodItem">
 </food-item-edit>
 <item-new (onSubmitNewFoodItem)="createFoodItem($event)"></item-new>
-
-
-
   `
 })
 
@@ -36,7 +33,6 @@ export class FoodItemListComponent{
   public filterCaloricContent: string = "";
 
   constructor() {
-
   }
   itemClicked(clickedItem: FoodItem): void {
     this.selectedFoodItem = clickedItem;
@@ -45,6 +41,7 @@ export class FoodItemListComponent{
     this.foodItemList.push(foodItem);
   }
   onChange(filterOption){
+    this.selectedFoodItem = null;
     this.filterCaloricContent = filterOption;
   }
 }
