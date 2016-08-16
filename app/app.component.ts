@@ -13,7 +13,7 @@ import { FoodItem  } from './food-item.model'
     </div>
   </div>
     <div class="container">
-      <table class="table table-inverse">
+      <table class="table table-striped">
         <tbody>
         <thead>
           <food-item-list
@@ -40,7 +40,7 @@ export class AppComponent {
      var total = 0;
      for( var foodItem of this.foodItems)
      {
-       total = total + foodItem.calories;
+       total = Number(total) + Number(foodItem.calories);
      }
      return total;
    }
